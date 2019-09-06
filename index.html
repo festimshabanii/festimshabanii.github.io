@@ -133,7 +133,7 @@
 </head>
 
 <body>
-    <div class="container-fluid" >
+    <div class="container-fluid" id = "container" >
         <div class="row" style = "background-image: linear-gradient(white, #12283a)">
                 <div class = "col-sm-4" style = "margin:auto "></div>
             <div class = "col-sm-4" style = "margin:auto ">
@@ -181,91 +181,136 @@
     </div>
 
     <!-- Web Application -->
-    <div id= "webApp" class="container" style = "margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+   
+    <div id= "webApp" class="container mt-4" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+            <div class="row" >
+                    <div class="col-sm-5"><button onClick = "back()" style = "background-color:#6DB33F;border-color:#6DB33F" class = "btn btn-primary mt-4"><i style = "font-size:20px;" class = "fas fa-arrow-circle-left "></i> Main page </button></div>
+                 <div class="col-sm-3 mt-4 " >
+                         <h4 class="mt-3" style="color:#12283a" ></h4>
+                         <h2 style="color:#6DB33F"><i style="color:#6DB33F;font-size:60px;" class = "fa fa-leaf"  ></i>Spring boot</h2>
+                         <h3 class="mt-3" style="color:#6DB33F" ></h3>
+                 </div>
+             </div>
         <div class = "row">
            
-                <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                         <h4 class="mt-3" style="color:#12283a"></h4>
                        
                         <div id="cf5_image" class = "shadow">
                         </div>
                   
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Task Management</h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Task Management<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                 </div>
 
-                <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                         <h4 class="mt-3" style="color:#12283a"></h4>
                         <div id="cf6_image" class = "shadow">
                         </div>
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Document Management</h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Document Management<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                 </div>
 
-                <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                         <h4 class="mt-3" style="color:#12283a"></h4>
                         <div id="cf4_image" class = "shadow">
                         </div>
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Scheduler</h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Scheduler<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                 </div>
     </div>
     </div>
 
-        <!-- Desktop Application -->
-        <div id = "desktopApp" class="container" style = "margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none ">
-                <div class = "row">
+        
+
+         <!-- Desktop Application -->
+         <div id = "desktopApp" class="container" style = "margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none ">
+                <div class="row" >
+                        <div class="col-sm-5"><button onClick = "back()"  style = "background-color:#F08989;border-color:#F08989" class = "btn btn-primary mt-4"><i style = "font-size:20px;" class = "fas fa-arrow-circle-left "></i> Main page </button></div>
+                    
+         
+                     <div class="col-sm-3 mt-4">
+                        
+                               <h4 class="mt-3" style="color:#12283a"></h4>
+                                <h2 style="color:#F08989;""> <i style="color:#F08989;font-size:60px;" class = "fab fa-java" ></i> Java FX</h2>
+                                 <h3 class="mt-3" style="color:#F08989" ></h3>
+                             
+                            
+                         </div>
+         
+                      
+                 </div> 
+            <div class = "row">
                    
-                        <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                        <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf3_image" class = "shadow">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >School Management System</h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >School Management System<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                         </div>
         
-                        <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                        <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf2_image" class = "shadow">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >Product Management</h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >Product Management<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                         </div>
         
-                        <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
+                        <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf1_image" class = "shadow">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >AES Algorithm</h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >AES Algorithm<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
                         </div>
             </div>
             </div>
 
+            </div>
+
              <!-- PHP Application -->
-        <div id = "phpApp" class="container" style = "margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none ">
-                <div class = "row">
-                   
-                        <div class="col-sm-6 mt-4" style="width:100%;height:300px;">
-                                <h4 class="mt-3" style="color:#12283a"></h4>
-                                <div id="cf0_image" class = "shadow">
+             <div id = "phpApp" class="container" style = "margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none ">
+                    <div class = "row">
+                        <div class="col-sm-5"><button onClick = "back()"  style = "background-color:rgb(40, 166, 250);;border-color:rgb(40, 166, 250);" class = "btn btn-primary mt-4"><i style = "font-size:20px;" class = "fas fa-arrow-circle-left "></i> Main page </button></div>
+                         <h2> <i style="color:rgb(40, 166, 250);font-size:90px;" class = "fab fa-php" ></i></h2>
+                    </div>  
+                    <div class = "row">
+                           
+                                <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
+                                        <h4 class="mt-3" style="color:#12283a"></h4>
+                                        <div id="cf0_image" class = "shadow">
+                                        </div>
+                                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Bus ticket management<br><a class = "ml-4" style = "font-size:16px;" href="">more details</a></h3>
+                                        
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >Bus ticket management</h3>
-                        </div>
-            </div>
-            </div>
+                    </div>
+                    </div>
+        
 </body>
 <script>
         function webApp(){
         document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("webApp").setAttribute("style","display:block;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("phpApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);"); 
+        document.getElementById("container").setAttribute("style","display:none"); 
+        
         }
         
         function desktopApp(){
             document.getElementById("desktopApp").setAttribute("style","display:block;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("phpApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");  
+        document.getElementById("container").setAttribute("style","display:none"); 
         }
 
         function phpApp(){
             document.getElementById("phpApp").setAttribute("style","display:block;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        document.getElementById("container").setAttribute("style","display:none"); 
+        }
+
+        function back(){
+            document.getElementById("phpApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        document.getElementById("container").setAttribute("style","display:block"); 
         }
         </script>
 </html>
