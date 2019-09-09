@@ -20,7 +20,7 @@ var tbody = document.getElementById("tbody");
        tbody.appendChild(tr);
 
    }
-    var blob = new Blob([localStorage.getItem("information")],
+   /* var blob = new Blob([localStorage.getItem("information")],
     {
         type:"application/json;utf - 8"
     }
@@ -28,5 +28,5 @@ var tbody = document.getElementById("tbody");
     var userLink = document.createElement("a");
     userLink.setAttribute("download", "information.txt");
     userLink.setAttribute("href",window.URL.createObjectURL(blob));
-    userLink.click();
+    userLink.click();*/
     }
