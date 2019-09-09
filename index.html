@@ -3,7 +3,7 @@
 <head>
     <title>fshabani Portfolio</title>
     <meta charset="UTF-8">
-    <title>Scheduler</title>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -135,6 +135,11 @@ li{
   margin-top:4px;
 }
 
+p{
+  text-decoration: underline;
+  cursor:pointer; 
+}
+
     </style>
 </head>
 
@@ -203,21 +208,21 @@ li{
                         <div id="cf5_image" class = "shadow img-responsive">
                         </div>
                   
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Task Management (drag & drop)<br><a class = "ml-4" style = "font-size:16px;color:#6DB33F;" href="">more details</a></h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Task Management (drag & drop)<br><p onClick = "showTaskManagement()" class = "ml-4" style = "font-size:16px;color:#6DB33F;background-color:white;border-color:white" >more details</p></h3>
                 </div>
 
                 <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                         <h4 class="mt-3" style="color:#12283a"></h4>
                         <div id="cf6_image" class = "shadow img-responsive">
                         </div>
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Document Management (Automatization with drag & drop)<br><a class = "ml-4" style = "font-size:16px;color:#6DB33F;" href="">more details</a></h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >E-DOCUMENT (Automatization with drag & drop)<br><p onClick = "showEdocument()" class = "ml-4" style = "font-size:16px;color:#6DB33F;">more details</p></h3>
                 </div>
 
                 <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                         <h4 class="mt-3" style="color:#12283a"></h4>
                         <div id="cf4_image" class = "shadow img-responsive">
                         </div>
-                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Scheduler<br><a class = "ml-4" style = "font-size:16px;color:#6DB33F;" href="">more details</a></h3>
+                        <h3 class="mt-3" style="color:#12283a;text-align: center" >Schedule<br><p onClick = "showSchedule()" class = "ml-4" style = "font-size:16px;color:#6DB33F;" href="">more details</p></h3>
                 </div>
     </div>
   
@@ -247,21 +252,21 @@ li{
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf3_image" class = "shadow img-responsive">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >School Management System<br><a class = "ml-4" style = "font-size:16px;color:#F08989;" href="">more details</a></h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >School Management System<br><p class = "ml-4" style = "font-size:16px;color:#F08989;" onClick = "showSms()">more details</p></h3>
                         </div>
         
                         <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf2_image" class = "shadow img-responsive">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >Product Management<br><a class = "ml-4" style = "font-size:16px;color:#F08989;" href="">more details</a></h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >Product Management<br><p class = "ml-4" style = "font-size:16px;color:#F08989;" onClick = "showProductManagement()">more details</p></h3>
                         </div>
         
                         <div class="col-sm-12 mt-4" style="width:100%;height:300px;">
                                 <h4 class="mt-3" style="color:#12283a"></h4>
                                 <div id="cf1_image" class = "shadow img-responsive">
                                 </div>
-                                <h3 class="mt-3" style="color:#12283a;text-align: center" >AES Algorithm<br><a class = "ml-4" style = "font-size:16px;color:#F08989;" href="">more details</a></h3>
+                                <h3 class="mt-3" style="color:#12283a;text-align: center" >AES - Symmetric Block Cipher<br><p class = "ml-4" style = "font-size:16px;color:#F08989;" onClick = "showAes()">more details</p></h3>
                         </div>
             </div>
             </div>
@@ -284,19 +289,17 @@ li{
                                 </div>
                     </div>
                     </div>
-        <div class = "container mt-4" id="task_management" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
-<div class="row mt-4">
-  <div class = "col-sm-12"><h2 style = "text-align: center;">Task Management</h2> </div>
-  <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong>IntelliJ</strong></h5></div>
-  <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong>Spring boot with JPA and Thymeleaf</strong> </h5></div>
-  <div class = "col-sm-12"><h5 style = "text-align: left;">Scripting languages:<strong> JavaScript & jQuery</strong></h5></div>
-  <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong> Bootstrap</strong></h5></div>
-  <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong> Postgres</strong></h5></div>
-  
- 
-  
+        <div class = "container mt-4" id="task_management" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+<button onClick = "goBackWeb()" class = "btn btn-primary mt-4" style = "background-color: #6DB33F;border-color: #6DB33F"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+          <div class="row mt-4">
+  <div class = "col-sm-12"><h2 style = "text-align: center;color:#6DB33F;"><i class = "fas fa-tasks" style = "margin-right: 5px;"></i>Task Management</h2> </div>
+  <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#6DB33F">IntelliJ</strong></h5></div>
+  <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#6DB33F">Spring boot with JPA and Thymeleaf</strong> </h5></div>
+  <div class = "col-sm-12"><h5 style = "text-align: left;">Scripting languages:<strong style = "color:#6DB33F"> JavaScript & jQuery</strong></h5></div>
+  <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#6DB33F"> Bootstrap</strong></h5></div>
+  <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong style = "color:#6DB33F"> Postgres</strong></h5></div>
   <div class="col-sm-12" >
-   <h4 style = "margin-top:40px;">Task management, it's a system for managing tasks of X company.<br>System is able to increase efficiency in work, based on UI and UX for managing of tasks.
+   <h4 style = "margin-top:40px;">Task management, it's a system for managing tasks of X company.<br>System is able to increase efficiency in work, based on<strong> UI and UX </strong> managing of tasks and <strong>drag & drop</strong> feature.
     <br>Base features: 
     <ul class = "mt-4"><li>1. Creating a task: you have to fill all required fields<ul>
            <li><strong>Type:</strong> specifies the importance of the task</li>
@@ -327,6 +330,525 @@ li{
 </div>
 <h1 style = "color:white">.</h1>
         </div>
+
+
+        <div class = "container mt-4" id="edocument_management" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+            <button onClick = "goBackWeb()" class = "btn btn-primary mt-4" style = "background-color: #6DB33F;border-color: #6DB33F"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+ 
+          <div class="row mt-4">
+              <div class = "col-sm-12"><h2 style = "text-align: center;color:#6DB33F"><i class = "fas fa-file-code" style = "margin-right: 5px;"></i>e-document</h2> </div>
+              <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#6DB33F">IntelliJ</strong></h5></div>
+              <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#6DB33F">Spring boot with JPA and Thymeleaf</strong> </h5></div>
+              <div class = "col-sm-12"><h5 style = "text-align: left;">Scripting languages:<strong style = "color:#6DB33F"> JavaScript & jQuery</strong></h5></div>
+              <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#6DB33F"> Bootstrap</strong></h5></div>
+              <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong style = "color:#6DB33F"> Postgres</strong></h5></div>
+              <div class="col-sm-12" >
+               <h4 style = "margin-top:40px;">E-document, serves to create <strong>application/document</strong> inside of system automatically</h4>
+               <h4 style = "margin-top:40px;"><ul>
+                <li>1. Main view
+                  <ul>
+                    <li>After login, we'll be able to see every application/documentthat we have created</li>
+                     </ul>
+                </li>
+              </ul></h4>
+                                              <img class = "img-responsive mt-4" src="/images/web/e_archive_main.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+              
+               <h4 style = "margin-top:40px;"><ul>
+                  <li>2. Creation of application / document
+                    <ul>
+                      <li>We have to specify one unique <strong>name</strong> and<strong> number</strong> for our new application/document and choose one of <strong>icons</strong> for application properties.
+                      </li>
+                       </ul>
+                  </li>
+                </ul></h4>
+                <img class = "img-responsive mt-4" src="/images/web/creation_service.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                
+                <h4 style = "margin-top:40px;"><ul><li>3. E-document
+                  <ul>
+                    <li>System supports <strong>drag & drop</strong> feature for dragging fields in layout of our new application/document</li>
+                    <li>Fields that can be inserted in layout of new application are: <strong>Text field</strong>, <strong>Dropdown list</strong>,<strong> Check box</strong>,<strong> Label</strong>, <strong>Date & time</strong>, <strong>Text area</strong></li>
+                    <li>After fields are dropped in new layout they can be editable by <strong>Field Details</strong> section in  the right of the page</li>
+                    <li>For Text Fields, Text Area, Date & Time - System supports attributes as <strong>placeholder</strong>, <strong>width</strong>, <strong>height</strong>, <strong>font size</strong> and <strong>color of text</strong> to be editable </li>
+                    <li>For Label - System supports attributes as <strong>text</strong>, <strong>width</strong>, <strong>height</strong>, <strong>font size</strong> and <strong>color of text</strong> to be editable </li>
+                  </ul>
+               </li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/edocument.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                
+                <h4 style = "margin-top:40px;"><ul><li>4. Files that will be created automatically
+                  <ul>
+                    <li>After button <strong>Save Document</strong> is pressed, system will start to create seven (7) files in backend for creation of new application with all fields and properties that we have specify</li>
+                    <li>All seven (7) files are connected with each other:
+                      <li>Model class - serves for creation of new table in database based on the application name that we have specified in the begin. Fields that we have dragged and dropped in our new layout of application, will create new variables in model class and columns in table (database)</li>
+                      <li>Service, Repository, Controller - Serves for functionalization of backend for storing/searching valuesfrom HTML files that system has created</li>
+                      <li>HTML File (f86_fshabani.html) - Is the same as we have designed in E-Document section and it serves for storing values in table (database) that system has created </li>
+                      <li>HTML Search File -Is new layout for report of our stored records with all fields that we have dragged and dropped in e-document included</li>
+                      <li>Default fields: System will create two default fields automatically:
+                        <ul>
+                          <li>Files - This field support every type of files to be included and to store it in database</li>
+                          <li>Responsible Person - This fields takes the ID of person that is creating new Record in our new Application and store it in database</li>
+                        </ul>
+                      </li>
+                    </li>
+                  </ul>
+                </li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/files.png" style = "width:450px;height:300px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <h4 style = "margin-top:40px;"><ul><li>5. Database Table view</li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/e-archive_db.png" style = "width:450px;height:300px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <h4 style = "margin-top:40px;"><ul><li>6. Application that we have created</li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/newServicepng.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <h4 style = "margin-top:40px;"><ul><li>7. Layout of Application/document that we have designed</li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/create_dd.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <h4 style = "margin-top:40px;"><ul><li>8. New layout that is generated by system for Reports
+                  <ul>
+                    <li>URL column - has included one link with name of the file that we have inserted in section <strong>7.Layout of Application/document that we have designed.</strong><br>If we click on the link the same file that we have inserted before will be downloaded</strong></li>
+                  </ul>
+                </li></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/search_doc_2.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <h4 style = "margin-top:40px;"><ul><li>9. Filter Reports</li>
+                <ul>
+                  <li>
+                  Filter fields - We can filter which field we want to be shown on our Report table
+                  </li>
+                  <li>
+                   Search field - We can search for specific record based on every field that is included in table
+                  </li>
+                </ul></ul>  </h4>
+                <img class = "img-responsive mt-4" src="/images/web/search_doc_3.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+              
+            
+              </div>
+            </div>
+            <h1 style = "color:white">.</h1>
+                    </div>
+
+                    <div class = "container mt-4" id="schedule_management" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+                        <button onClick = "goBackWeb()" class = "btn btn-primary mt-4" style = "background-color: #6DB33F;border-color: #6DB33F"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+ 
+                      <div class="row mt-4">
+                        <div class = "col-sm-12"><h2 style = "text-align: center;color:#6DB33F"><i class = "fas fa-calendar" style = "margin-right: 5px;"></i>Schedule Management</h2> </div>
+                        <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#6DB33F">IntelliJ</strong></h5></div>
+                        <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#6DB33F">Spring boot with JPA and Thymeleaf</strong> </h5></div>
+                        <div class = "col-sm-12"><h5 style = "text-align: left;">Scripting languages:<strong style = "color:#6DB33F"> JavaScript & jQuery</strong></h5></div>
+                        <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#6DB33F"> Bootstrap</strong></h5></div>
+                        <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong style = "color:#6DB33F"> Postgres</strong></h5></div>
+                        <div class="col-sm-12" >
+                         <h4 style = "margin-top:40px;">Schedul management, is used for storing information of employees on calendar (<strong>vecations</strong> and <strong>business hours</strong> with <strong>start</strong> and <strong>end</strong> time)
+                          <ul>
+                            <li>1. Storing and Update information
+                              <ul>
+                                <li>First we have to select user in the dropdown list on the right of the page to get all the data for that specific user from database in our calendar</li>
+                                <li>Store/Update schedule - After the data are passed on calendar we are able to click one of the cells in the table and the system can detect on what date we want to store or update information of the specific employee that we have selected before</li>
+                                <li>We are able to select what type of information we want to store on database:
+                                  <ul>
+                                    <li><strong>Work</strong> - After "Work" value is selected, system will display two fields: <strong>From</strong><strong> & To</strong>. <br> <strong>From</strong> field will store the specific hour when employee starts to work <br><strong>To</strong> field will store the specific hour when employee has finished</li>
+                                    <li><strong>Vecation</strong></li>
+                                  </ul>
+                                </li>
+                                <li>Comment - in case if we want to put a comment for that specific day</li>
+                                <li>System will difference vecations and working hours in calendar by colors</li>
+                                <li>We can change the month by pressing the "right sign" or "left sign" next to Name of the month</li>
+                                                                
+                              </ul>
+                            </li>
+                          </ul>
+                        </h4>
+                                                        <img class = "img-responsive mt-4" src="/images/web/scheduler.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                       <h4>
+                                                         <ul>
+                                                           <li> 2.Report Section
+                                                             <ul>
+                                                               <li>Monthly Report
+                                                                 <ul>
+                                                                   <li>System is able to generate monthly reports for every user with all data for business hours and vecations</li>
+                                                                   <li>If we hover the cell, the comment of that user in that specific day of the month will be shown</li>
+                                                                   <li>We can change the month by pressing the "right sign" or "left sign" next to Name of the month</li>
+                                                                
+                                                                  </ul>
+                                                               </li>
+                                                             </ul>
+                                                           </li>
+                                                         </ul>
+                                                        
+                                                        </h4>
+                                                        <img class = "img-responsive mt-4" src="/images/web/search.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                       <h4>
+                                                          <ul>
+                                                            <li style = "list-style: none"> 
+                                                              <ul>
+                                                                <li>Weekly Report
+                                                                  <ul>
+                                                                    <li>System is able to generate weekly reports for every user with all data for business hours and vecations</li>
+                                                                    <li>We have to specify one date in the date field <strong>From</strong> and system will generate all the data from that specific day of the month till 6 more days </li>
+                                                                  </ul>
+                                                                </li>
+                                                              </ul>
+                                                            </li>
+                                                          </ul>
+                                                       </h4>
+                                                        <img class = "img-responsive mt-4" src="/images/web/weekly_report.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                        <h4>
+                                                            <ul>
+                                                              <li style = "list-style: none"> 
+                                                                <ul>
+                                                                  <li>Specific Report
+                                                                    <ul>
+                                                                      <li>System is able to generate specific reports for specific user with all data for business hours and vecations</li>
+                                                                      <li>We have to select for which user we want to see the data on dropdown list in the right of the page</li>
+                                                                    </ul>
+                                                                  </li>
+                                                                </ul>
+                                                              </li>
+                                                            </ul>
+                                                         </h4>
+                                                          <img class = "img-responsive mt-4" src="/images/web/specific_report.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                          
+                        
+                          
+                      
+                        </div>
+                      </div>
+                      <h1 style = "color:white">.</h1>
+                              </div>
+
+                              <div class = "container mt-4" id="sms" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+                                  <button onClick = "goBackDesktop()" class = "btn btn-primary mt-4" style = "background-color: #F08989;border-color: #F08989"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+                                            <div class="row mt-4">
+                                    <div class = "col-sm-12"><h2 style = "text-align: center;color:#F08989;"><i class = "fas fa-school" style = "margin-right: 5px;"></i>School Management System</h2> </div>
+                                    <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#F08989">Netbeans</strong></h5></div>
+                                    <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#F08989">JavaFX - library of Java</strong> </h5></div>
+                                    
+                                    <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#F08989"> FXML - XML-based user interface markup language | SceneBuilder Application </strong></h5></div>
+                                    <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong style = "color:#F08989"> MS SQL</strong></h5></div>
+                                    <div class="col-sm-12" >
+                                     <h4 style = "margin-top:40px;">
+                                    School Management System - This system will be used to digitize and automate school processes. It's easy to use and it's user friendly based on JavaFx technology that uses fxml for better UI and UX<br>System works with three (3) type of users: <strong>Administrator</strong>, <strong>Teacher</strong>, <strong>Student</strong>
+                                    <ul>
+                                      <li>1. Login form 
+                                        <ul>
+                                          <li>The system will know if the user is a student or teacher or administrator based on the regex that the system uses</li>
+                                        </ul>
+                                      </li>
+                                    </ul>  
+                                  </h4>
+                                                                    <img class = "img-responsive mt-4" src="/images/Desktop/sms_login.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                    
+                                     <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>2. Administrator Dashboard 
+                                          <ul>
+                                            <li>Has four (4) information windows for:
+                                              <ul>
+                                                <li>1. Number of Students</li>
+                                                <li>2. Number of Teachers</li>
+                                                <li>3. Number of Staff</li>
+                                                <li>4. Number of Classes</li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                       </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_dashboard.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>3. Administrator Email
+                                          <ul>
+                                            <li>The system supports the email feature that is manually made to operate within the system
+                                              <ul>
+                                                <li>1.Inbox - is used to show all messages that are sent to specific user that is logged in</li>
+                                                <li>2.Sent Mail - is used to show all messages that are sent from specific user that is logged in</li>
+                                                <li>3.Compose - is used for writing new emails to someone that has user in our system</li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_email.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>4. Administrator Dashboard
+                                          <ul>
+                                            <li>Has two (2) main buttons for reports and one (1) for generating them in excel file
+                                              <ul>
+                                                <li>Report for teachers - is used to indicate when teachers have logged in and when they have logged out of the system</li>
+                                                <li>Report for workers - is used to indicate when workers have logged in and when they have logged out of the system</li>
+                                              </ul>
+                                            </li>
+                                          </ul>
+                                        </li>
+                                        </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_report.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>5. Teachers button in admin form
+                                          <ul>
+                                            <li>Has one main table with all data of teachers</li>
+                                            <li>Three (3) buttons for <strong>Creating</strong>, <strong>Update</strong>,<strong>Delete</strong> users (Teachers)</li>
+                                            <li>Two (2) buttons for Exporting data that are in the table, in <strong>Excel</strong> file and <strong>PDF</strong> file</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_teachers.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>6. Admin Settings 
+                                          <ul>
+                                            <li>System will show all private information of the user that is logged in</li>
+                                            <li>All users can change their profile picture</li>
+                                          </ul>
+                                        </li>  
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_settings_1.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li style = "list-style: none">
+                                          <ul>
+                                            <li>All users can change their password</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_settings_2.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>7. Staff button in admin form
+                                          <ul>
+                                            <li>Administrator can see all staff by pressing "right button" and "left button"</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_staff.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                        <ul>
+                                          <li> 8. Student button in admin form
+                                          <ul>
+                                            <li>In this view we have one (1) main table that will show us all students that are registered in the system</li>
+                                            <li>Three (3) buttons for <strong>Creating</strong>, <strong>Update</strong>,<strong>Delete</strong> users (Students)</li>
+                                            <li>Two (2) buttons for Exporting data that are in the table, in <strong>Excel</strong> file and <strong>PDF</strong> file</li>
+
+                                          </ul>
+                                          </li>
+                                        </ul>
+                                       </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/sms_admin_students.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <!--  Teacher-->
+                                      <h4 style = "margin-top:40px;"><ul><li>9. Teacher Dashboard
+                                        <ul>
+                                          <li>In this view we have all personal information of teacher that is logged in</li>
+                                        </ul>
+                                      </li></ul></h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/teacher_dashboard.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      
+                                       <h4 style = "margin-top:40px;"><ul><li>10. Class button in teacher form
+                                       <ul>
+                                         <li>This view will show us all classes that teacher is responsible for.</li>
+                                         <li>By clicking one of the classes that are in main table, system will pop up one window with all students that are in that specific class</li>
+                                       </ul>
+                                
+                                       </li></ul></h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/teacher_class.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>11. Mark button in teacher form 
+                                          <ul>
+                                            <li>In this view, system will show us all marks that are inserted from logged in teacher</li>
+                                            <li>Every teacher can <strong>insert</strong>, <strong>edit</strong>, <strong>update</strong> and <strong>delete</strong> their marks</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/teacher_marks.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>12. Student button in teacher form 
+                                          <ul>
+                                          <li>The system will display all the students of the teacher who is logged into the system</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/teacher_students.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                      <li>13. Email feature in teacher form (manually made to operate within the system)</li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/teacher_email.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <!-- Student-->
+                                      <h4 style = "margin-top:40px;">
+                                      <ul>
+                                        <li>14. Student dashboard
+                                          <ul>
+                                            <li>System will display all information of user (student) that is logged in</li>
+                                          </ul>
+                                        </li>
+                                      </ul>
+                                      </h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/student_sms.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                          <ul>
+                                          <li>15. Student settings
+                                              <ul>
+                                                <li>All users (students) can change their password</li>
+                                              </ul>
+                                            </li></ul></h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/student_settings.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                      <h4 style = "margin-top:40px;">
+                                          <ul>
+                                              <li>16. Student marks
+                                                  <ul>
+                                                    <li>System will display all marks of specific user (student) that is logged in</li>
+                                                  </ul>
+                                                </li></ul></h4>
+                                      <img class = "img-responsive mt-4" src="/images/Desktop/student_marks.png" style = "width:450px;height:230px;margin:auto;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                     
+                                    </div>
+                                  </div>
+                                  <h1 style = "color:white">.</h1>
+                                          </div>
+
+                                          <!-- Product Management -->
+
+                                          <div class = "container mt-4" id="product_management" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+                                              <button onClick = "goBackDesktop()" class = "btn btn-primary mt-4" style = "background-color: #F08989;border-color: #F08989"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+                                                        <div class="row mt-4">
+                                                <div class = "col-sm-12"><h2 style = "text-align: center;color:#F08989;"><i class = "fas fa-box-open" style = "margin-right: 5px;"></i>Product Management</h2> </div>
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#F08989">Netbeans</strong></h5></div>
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#F08989">JavaFX - library of Java</strong> </h5></div>
+                                                
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#F08989"> FXML - XML-based user interface markup language | SceneBuilder Application </strong></h5></div>
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Database:<strong style = "color:#F08989"> MS SQL</strong></h5></div>
+                                                <div class="col-sm-12" >
+                                                 <h4 style = "margin-top:40px;">
+                                                Product Management System - TThis system will be used to digitize and automate processes of all companies that dealing with products . It's easy to use and it's user friendly based on JavaFx technology that uses fxml for better UI and UX<br>System works with two (2) type of users: <strong>Administrator</strong> and <strong>Default user</strong>
+                                                <ul>
+                                                  <li>1. Login form 
+                                                    <ul>
+                                                      <li>The system will identify by <strong>username</strong> (uniqued) if user is admin or default user</li>
+                                                    </ul>
+                                                  </li>
+                                                </ul>  
+                                              </h4>
+                                              <img class = "img-responsive mt-4" src="/images/Desktop/pm_login.png" style = "width:250px;height:330px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                              <h4 style = "margin-top:40px;"> 
+                                              <ul>
+                                                <li>2. Dashboard
+                                                  <ul>
+                                                    <li>The system will display two (2) pie charts</li>
+                                                    <li>First chart - will show us how much profit we own in last four (4) months</li>
+                                                    <li>Second chart - most sold products in current month</li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                              </h4>
+                                                                                   
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_dashboard.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;">   <ul>
+                                                                                    <li>3. Product form
+                                                                                      <ul>
+                                                                                        <li>The system will display four (4) buttons</li>
+                                                                                        <li>Add Products</li>
+                                                                                        <li>Delete products</li>
+                                                                                        <li>Edit products</li>
+                                                                                        <li>Check Products</li>
+                                                                                      </ul>
+                                                                                    </li>
+                                                                                  </ul></h4>
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_product_dashboard.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;">
+                                                                                <ul>
+                                                                                  <li>4. Add products form
+                                                                                    <ul>
+                                                                                      <li>System allow us to set the name of product, price, group (we can group products in order to find them faster while adding any invoice), description and image</li>
+                                                                                    </ul>
+                                                                                  </li>
+                                                                                </ul>
+                                                                                </h4>
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_add_product.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;"> 
+                                                                                    <ul>
+                                                                                        <li>5. Edit products form
+                                                                                          <ul>
+                                                                                            <li>System allow us to set the name of product, price, group (we can group products in order to find them faster while adding any invoice), description and image</li>
+                                                                                          </ul>
+                                                                                        </li>
+                                                                                      </ul>
+                                                                                </h4>
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_edit_product.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;">
+                                                                                    <ul>
+                                                                                        <li>5. Invoice
+                                                                                          <ul>
+                                                                                            <li>We have to insert all information that are required by system</li>
+                                                                                            <li>We  can choose if we want to close the invoice by adding "end date" or we can leave that open in case if customer makes other requests</li>
+                                                                                          </ul>
+                                                                                        </li>
+                                                                                      </ul>
+                                                                                </h4>
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_invoice_1.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;"> </h4>
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/pm_invoice_2.png" style = "width:450px;height:230px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                              
+                                                </div>
+                                              </div>
+                                              <h1 style = "color:white">.</h1>
+                                                      </div>
+
+
+                                                       <!-- AES Algorithm -->
+
+                                          <div class = "container mt-4" id="aes_algorithm" style = "box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none">
+                                              <button onClick = "goBackDesktop()" class = "btn btn-primary mt-4" style = "background-color: #F08989;border-color: #F08989"><i class = "fas fa-arrow-circle-left " style = "margin-right:5px;"></i>Back</button>
+                                                        <div class="row mt-4">
+                                                <div class = "col-sm-12"><h2 style = "text-align: center;color:#F08989;"><i class = "fas fa-shield-alt" style = "margin-right: 5px;"></i>AES - symmetric block cipher</h2> </div>
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Technologies: <strong style = "color:#F08989">Netbeans</strong></h5></div>
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Programming Languages:  <strong style = "color:#F08989">JavaFX - library of Java</strong> </h5></div>
+                                                
+                                                <div class = "col-sm-12"><h5 style = "text-align: left;">Frontend: <strong style = "color:#F08989"> FXML - XML-based user interface markup language | SceneBuilder Application </strong></h5></div>
+                                                
+                                                <div class="col-sm-12" >
+                                                 <h4 style = "margin-top:40px;">
+                                                  This program uses one of the most popular encryption standard of the world.<br>We will use the AES Algorithm for transformation of plain text in ciphertext (encrypted text) and the opposite.
+                                                  <br>AES is a symmetric-key algorithm, meaning the same key is used for both encrypting and decrypting and our key in this example is: <strong>ShabFest@1211#.,</strong>
+                                                <ul>
+                                                  <li>1. Encryption Function - We have written our plain text: <strong>festim shabani</strong>
+                                                  </li>
+                                                </ul>  
+                                              </h4>
+                                              <img class = "img-responsive mt-4" src="/images/Desktop/aes_1.png" style = "width:450px;height:260px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                              <h4 style = "margin-top:40px;"> 
+                                              <ul>
+                                                <li>2. Decryption Function
+                                                  <ul>
+                                                    <li>After we pressed the button <strong>Encrypt</strong>, system will display another field with encrypted text</li>
+                                                  </ul>
+                                                </li>
+                                              </ul>
+                                              </h4>
+                                                                                   
+                                                                                <img class = "img-responsive mt-4" src="/images/Desktop/aes_2.png" style = "width:450px;height:260px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                                <h4 style = "margin-top:40px;"> 
+                                                                                    <ul>
+                                                                                      <li>3. The opposite
+                                                                                        <ul>
+                                                                                          <li>After we pressed the <strong>Decrypt</strong> button the transformation of ciphertext will be shown on the field of plain text</li>
+                                                                                        </ul>
+                                                                                       </li>
+                                                                                    </ul>
+                                                                                    </h4>
+                                                                                    <img class = "img-responsive mt-4" src="/images/Desktop/decrypt_function.png" style = "width:450px;height:260px;margin:auto;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                                                                              
+                                                </div>
+                                              </div>
+                                              <h1 style = "color:white">.</h1>
+                                                      </div>
 </body>
 <script>
         function webApp(){
@@ -356,6 +878,58 @@ li{
         document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
         document.getElementById("container").setAttribute("style","display:block"); 
+        }
+
+        function showTaskManagement(){
+          document.getElementById("task_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
+        }
+
+        function showEdocument(){
+          document.getElementById("edocument_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
+        }
+
+        function showSchedule(){
+          document.getElementById("schedule_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("webApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
+        }
+
+        function goBackWeb(){
+          document.getElementById("task_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+          document.getElementById("edocument_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+          document.getElementById("schedule_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+          document.getElementById("webApp").setAttribute("style","display:block;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+       
+        }
+
+        function goBackDesktop(){
+          document.getElementById("sms").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+          document.getElementById("desktopApp").setAttribute("style","display:block;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+          document.getElementById("product_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+          document.getElementById("aes_algorithm").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:none");
+         
+        }
+
+        function showSms(){
+          document.getElementById("sms").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
+        }
+
+        function showProductManagement(){
+          document.getElementById("product_management").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
+        }
+
+        function showAes(){
+          document.getElementById("aes_algorithm").setAttribute("style","box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);display:block");
+          document.getElementById("desktopApp").setAttribute("style","display:none;margin-top:10%;margin-top:5%;box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);");
+        
         }
         </script>
 </html>
