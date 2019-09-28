@@ -48,14 +48,14 @@ renderer.setClearColor( 0x000000, 0 );
 var mtLoader = new THREE.MTLLoader();
 mtLoader.setTexturePath('/assets/');
 mtLoader.setPath('/Artisti//assets/');
-mtLoader.load('1.mtl',function(materials){
+mtLoader.load('koltuk2.fbx',function(materials){
 materials.preload();
 
 
 var objLoader = new THREE.OBJLoader();
 objLoader.setMaterials(materials);
 objLoader.setPath('/Artisti/assets/');	
-objLoader.load('1.obj',function (object){
+objLoader.load('Koltuk.obj',function (object){
 	object.position.y -= 60;
 	scene.add(object);
 });
