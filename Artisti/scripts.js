@@ -56,7 +56,7 @@ var objLoader = new THREE.OBJLoader();
 objLoader.setMaterials(materials);
 objLoader.setPath('/Artisti/assets/');	
 objLoader.load('Koltuk.obj',function (object){
-	object.position.y -= 60;
+	object.position.y = 0;
 	scene.add(object);
 });
 
