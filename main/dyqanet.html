@@ -1,0 +1,249 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<title>Kosva Store</title>
+<style>
+.nav-background{
+  background: rgb(78,227,255);
+  background: linear-gradient(90deg, rgba(78,227,255,1) 4%, rgba(65,231,181,1) 48%rgba(50,56,203,1) 100%);
+}
+.carousel-inner:hover ~ .carousel-control-prev  {
+background-color:black;
+}
+
+.carousel-inner:hover ~ .carousel-control-next {
+background-color:black;
+}
+
+.carousel-control-prev:hover {
+background-color:black;
+}
+
+.carousel-control-next:hover {
+  background-color:black;
+}
+
+.type_2 {
+border: 0;
+height: 55px;
+background-image: url(../images/hr-lines.png);
+background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+
+
+  <!-- Links -->
+  <div class="row navbar navbar-expand-lg bg-light nav-background fixed-top">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-3"> 
+       <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="navbar-brand" href="#">Kosova Store</a>
+      </li>
+      
+    </ul></div>
+    <div class="col-sm-6">
+        <!-- <ul  class="navbar-nav">
+
+            <li  class="nav-item"> <div class="input-group mb-3">
+               <input type="text" class="form-control" placeholder="Search store ...">
+               <div class="input-group-append">
+                 <span class="input-group-text"><i class = "fa fa-search"></i></span>
+               </div>
+             </div></li>
+           
+               
+           
+           </ul> -->
+      <ul class="navbar-nav">
+     
+        <li class="nav-item float-right" style="float:right">
+          <a class="nav-link"  href="#">DYQANE</a>
+        </li>
+        <li class="nav-item" >
+          <a class="nav-link" href="#">GASTRONOMI</a>
+        </li>
+        <li class="nav-item" >
+            <a class="nav-link" href="#">OFERTA</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" href="#">EVENTE</a>
+            </li>
+            <li class="nav-item" >
+                <a class="nav-link" href="#">RRETH NESH</a>
+              </li>
+              <li class="nav-item" >
+                  <a class="nav-link" href="#">LAJME</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="#">KATALOG</a>
+                  </li>
+                  <li class="nav-item" >
+                      <a class="nav-link" href="#">OBJEKTI</a>
+                    </li>
+      </ul>
+
+
+    </div>
+   
+  </div>
+
+   
+
+ 
+ 
+    
+
+
+<div id="demo" style="width:100%;" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../images/viber_image_2019-12-14_12-01-25 (2).jpg" alt="Los Angeles" width="100%" height="500">
+        <div class="carousel-caption">
+          <h3>Los Angeles</h3>
+          <p>We had such a great time in LA!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="../images/viber_image_2019-12-14_12-01-25 (2).jpg" alt="Chicago"  width="100%" height="500">
+        <div class="carousel-caption">
+          <h3>Chicago</h3>
+          <p>Thank you, Chicago!</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="../images/viber_image_2019-12-14_12-01-25 (2).jpg" alt="New York"  width="100%" height="500">
+        <div class="carousel-caption">
+          <h3>New York</h3>
+          <p>We love the Big Apple!</p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+<div class="container-fluid">
+  <div class="row">
+
+  </div>
+    <div class="row mt-4 mb-4">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Kërko dyqanin...">
+            <div class="input-group-append">
+              <span class="input-group-text"><i class = "fa fa-search"></i></span>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row hidden-xs">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-2">
+        <h4 class="mb-4" style="font-size:1.2vw;">      KATEGORITË E DYQANEVE</h4>
+        <ul  class="list-group hidden-xs">
+            <li  class="list-group-item"  style="font-size:0.9vw;">
+                ELEKTRONIKË
+              </li>
+              <li  class="list-group-item"  style="font-size:0.9vw;">
+            FEMIJË
+          </li>
+          <li  class="list-group-item"  style="font-size:0.9vw;">
+              HIPERMARKET
+            
+            </li>
+
+            <li  class="list-group-item"  style="font-size:0.9vw;">
+                MODË
+              
+              </li>
+              <li  class="list-group-item"  style="font-size:0.9vw;">
+                  SHTËPI
+                
+                </li>
+                <li  class="list-group-item"  style="font-size:0.9vw;">
+                    USHQIM & PIJE
+                  
+                  </li>
+                  <li  class="list-group-item"  style="font-size:0.9vw;">
+                      SHËRBIME
+                    
+                    </li>
+        </ul>
+      </div>
+      <div class="col-sm-7 row">
+          <h5 class="mb-4" style="width:100%;text-align: center;font-size:1vw;"> A | B | C | D | E | F | G | H | I | J | K | L | M | N | O | P | Q | R | S | T | U | V | X | Y | Z </h5>
+        <div class="col-sm-3">
+            <div class="card" style="box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                <div class="card-body" style="border-bottom: 2px solid rgba(0, 0, 0, 0.19)">
+                    <h4 class="card-title" style="margin:0px;font-size:1.2vw;"><i class="fa fa-clock"></i> 08:00-16:00</h4>
+                    <!-- <p class="card-text" style="margin:0px;"><i class="fa fa-users"></i> 19</p>
+                    <p class="card-text" style="margin:0px;margin-bottom: 5px;"><i class="fa fa-map-marker-alt"></i> PR, PZ</p> -->
+                  
+                </div>
+              <img class="card-img-top responsive" src="../images/gently_shoes.svg" alt="Card image" style="padding: 8px;border-bottom: 2px solid rgba(0, 0, 0, 0.19)">
+                <div class="card-body">
+                  <h4 class="card-title" style="font-size:1.2vw;">Gentli Shoes</h4>
+    
+                </div>
+             
+              </div>
+        </div>
+        <div class="col-sm-3">
+                <div class="card" style="box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                    <img class="card-img-top responsive" src="../images/albi2.png" alt="Card image" style="padding: 8px;border-bottom: 2px solid rgba(0, 0, 0, 0.19)">
+                    <div class="card-body">
+                      <h4 class="card-title">Gentli Shoes</h4>
+                      <p class="card-text" style="margin:0px;"><i class="fa fa-clock"></i> 08-16</p>
+                      <p class="card-text" style="margin:0px;"><i class="fa fa-users"></i> 19</p>
+                      <p class="card-text" style="margin:0px;margin-bottom: 5px;"><i class="fa fa-map-marker-alt"></i> PR, PZ</p>
+                      <a href="#" class="btn btn-primary">Open Store</a>
+                    </div>
+                  </div>
+            </div><div class="col-sm-3">
+                    <div class="card" style="box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                        <img class="card-img-top responsive" src="../images/gently_shoes.svg" alt="Card image" style="padding: 8px;">
+          
+                      </div>
+                </div><div class="col-sm-3">
+                        <div class="card" style="box-shadow: 0 28px 38px 0 rgba(0, 0, 0, 0.2), 0 10px 40px 0 rgba(0, 0, 0, 0.19);">
+                            <img class="card-img-top responsive" src="../images/gently_shoes.svg" alt="Card image" style="padding: 8px;border-bottom: 2px solid rgba(0, 0, 0, 0.19)">
+                            <div class="card-body">
+                              <h4 class="card-title">Gentli Shoes</h4>
+                              <p class="card-text" style="margin:0px;"><i class="fa fa-clock"></i> 08-16</p>
+                              <p class="card-text" style="margin:0px;"><i class="fa fa-users"></i> 19</p>
+                              <p class="card-text" style="margin:0px;margin-bottom: 5px;"><i class="fa fa-map-marker-alt"></i> PR, PZ</p>
+                              <a href="#" class="btn btn-primary">Open Store</a>
+                            </div>
+                          </div>
+                    </div>
+                  </div>
+    </div>
+</div>
+</body>
+</html>
